@@ -1,0 +1,674 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    color: #1f2937;
+
+    background: #f3f6fb;
+}
+
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #2563eb
+        );
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+
+    width: 440px;
+
+    max-width: 100%;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+
+/* =========================================
+   YOUR LOGO
+========================================= */
+
+.school-logo {
+
+    width: 100px;
+
+    height: 100px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    border: 4px solid #2563eb;
+}
+
+
+/* =========================================
+   LOGIN TEXT
+========================================= */
+
+.login-card h1 {
+
+    margin: 0 0 10px;
+
+    font-size: 28px;
+}
+
+
+.welcome {
+
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+
+.login-card form {
+
+    text-align: left;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+label {
+
+    display: block;
+
+    font-weight: 600;
+
+    margin: 12px 0 6px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+/* FOCUS */
+
+input:focus,
+select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.checkbox-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: normal;
+}
+
+
+.checkbox-row input {
+
+    width: auto;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button-row {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.btn {
+
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 12px 18px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+/* HOVER */
+
+.btn:hover {
+
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+
+.primary {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.secondary {
+
+    background: #e2e8f0;
+
+    color: #1e293b;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.message {
+
+    min-height: 22px;
+
+    margin: 14px 0 0;
+
+    font-weight: 600;
+}
+
+
+.success {
+
+    color: #15803d;
+}
+
+
+.error {
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   DEMO LOGIN
+========================================= */
+
+.demo-login {
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    background: #eff6ff;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   DASHBOARD HEADER
+========================================= */
+
+.top-header {
+
+    background: #0f172a;
+
+    color: white;
+
+    padding: 25px 5%;
+}
+
+
+.top-header h1 {
+
+    margin: 0;
+}
+
+
+.top-header p {
+
+    margin-bottom: 0;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+
+    background: #16a34a;
+
+    color: white;
+
+    padding: 14px 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.nav-brand {
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+/* HOVER */
+
+.nav-links a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+
+    width: 92%;
+
+    max-width: 1200px;
+
+    margin: 25px auto;
+}
+
+
+/* =========================================
+   PANELS
+========================================= */
+
+.hero-panel,
+.panel {
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(15, 23, 42, 0.06);
+}
+
+
+.hero-panel {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.hero-panel h2,
+.panel h2 {
+
+    margin-top: 0;
+}
+
+
+/* =========================================
+   STUDENT COUNTER
+========================================= */
+
+.counter-box {
+
+    min-width: 150px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    background: #eff6ff;
+
+    border-radius: 12px;
+}
+
+
+.counter-box span {
+
+    display: block;
+
+    color: #64748b;
+}
+
+
+.counter-box strong {
+
+    display: block;
+
+    font-size: 35px;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   STUDENT FORM
+========================================= */
+
+.student-form {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+.form-group label {
+
+    margin-top: 0;
+}
+
+
+/* =========================================
+   GENDER
+========================================= */
+
+.gender-group {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.gender-group > label:first-child {
+
+    width: 100%;
+}
+
+
+.gender-group label:not(:first-child) {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-weight: normal;
+}
+
+
+.gender-group input {
+
+    width: auto;
+}
+
+
+/* =========================================
+   FULL WIDTH
+========================================= */
+
+.full-width {
+
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-panel input {
+
+    max-width: 500px;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-wrapper {
+
+    overflow-x: auto;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+}
+
+
+th,
+td {
+
+    padding: 12px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    text-align: left;
+}
+
+
+th {
+
+    background: #0f172a;
+
+    color: white;
+}
+
+
+/* Alternating rows */
+
+tbody tr:nth-child(even) {
+
+    background: #f8fafc;
+}
+
+
+/* Table hover */
+
+tbody tr:hover {
+
+    background: #eff6ff;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-btn {
+
+    background: #dc2626;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 8px 11px;
+
+    cursor: pointer;
+}
+
+
+.delete-btn:hover {
+
+    background: #b91c1c;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: #0f172a;
+
+    color: white;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar,
+    .hero-panel {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .student-form {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .full-width {
+
+        grid-column: auto;
+    }
+
+
+    .login-card {
+
+        padding: 25px;
+    }
+
+}

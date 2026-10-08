@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="login-page">
+
+    <!-- LOGIN CARD -->
+    <div class="login-card">
+
+        <!-- YOUR OWN LOGO -->
+        <img
+            src="school-logo.png" alt="School Logo" class="school-logo"
+        >
+
+        <h1>Student Management System</h1>
+
+        <p class="welcome">
+            Welcome! Please login to access the student dashboard.
+        </p>
+
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm">
+
+            <!-- Username -->
+            <label for="username">
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+            >
+
+
+            <!-- Password -->
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+            >
+
+
+            <!-- Show Password -->
+            <label class="checkbox-row">
+
+                <input
+                    type="checkbox"
+                    id="showPassword"
+                >
+
+                <span>Show Password</span>
+
+            </label>
+
+
+            <!-- Buttons -->
+            <div class="button-row">
+
+                <button
+                    type="submit"
+                    class="btn primary"
+                >
+                    Login
+                </button>
+
+
+                <button
+                    type="reset"
+                    class="btn secondary"
+                    id="resetLogin"
+                >
+                    Reset
+                </button>
+
+            </div>
+
+
+            <!-- Login Message -->
+            <p
+                id="loginMessage"
+                class="message"
+            ></p>
+
+        </form>
+
+
+        <!-- DEMO LOGIN -->
+        <div class="demo-login">
+
+            <strong>Demo Login</strong>
+
+            <br>
+
+            Username: admin
+
+            <br>
+
+            Password: 12345
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
